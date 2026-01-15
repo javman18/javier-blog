@@ -1,0 +1,199 @@
+:root{
+  --bg: #fafafa;
+  --text: #111;
+  --muted: #666;
+  --border: #e6e6e6;
+  --link: #111;
+}
+
+/* Reset básico */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.7 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Layout */
+.container{
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+/* Header */
+.header{
+  position: sticky;
+  top: 0;
+  background: rgba(250,250,250,0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 10;
+}
+
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+/* Brand */
+.brand-wrap{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand{
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.subtitle{
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* Navegación */
+.nav a{
+  margin-left: 14px;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.nav a:hover{
+  color: var(--text);
+}
+
+/* Intro */
+.intro{
+  padding: 18px 0 8px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* Feed */
+.feed{
+  padding: 10px 0 30px;
+}
+
+.feed-empty{
+  color: var(--muted);
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.feed-section{
+  padding: 8px 0 18px;
+}
+
+.section-title{
+  margin: 14px 0 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+/* Post cards */
+.post-card{
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-card h2,
+.post-card h3{
+  margin: 0 0 6px;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.post-card h2 a,
+.post-card h3 a{
+  color: var(--link);
+  text-decoration: none;
+}
+
+.post-card h2 a:hover,
+.post-card h3 a:hover{
+  text-decoration: underline;
+}
+
+.excerpt{
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* Meta */
+.meta{
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Tags */
+.tag{
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.tag-wrap .tag + .tag{
+  margin-left: 6px;
+}
+
+/* Tono visual */
+.tone-calm{
+  border-left: 3px solid #d9d9d9;
+  padding-left: 12px;
+}
+
+.tone-ink{
+  border-left: 3px solid #bfbfbf;
+  padding-left: 12px;
+}
+
+.tone-work{
+  border-left: 3px solid #a8a8a8;
+  padding-left: 12px;
+}
+
+.tone-now{
+  border-left: 3px solid #8f8f8f;
+  padding-left: 12px;
+}
+
+/* Footer */
+.footer{
+  padding: 24px 0 40px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Responsive ligero (sin menú hamburguesa) */
+@media (max-width: 600px){
+  .header-inner{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .nav a{
+    margin-left: 0;
+    margin-right: 12px;
+  }
+}
