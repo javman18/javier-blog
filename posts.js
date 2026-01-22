@@ -25,16 +25,6 @@ const posts = [
   section: "trabajo",
   tags: ["trabajo", "ia", "rag", "evaluacion"],
   tone: "work"
-},
-
-  {
-    title: "Ahora",
-    href: "ahora.html",
-    excerpt: "Un estado rapido: en que ando, que estoy leyendo/escribiendo y que esta en pausa.",
-    date: "Actualizado: 13 ene 2026",
-    section: "ahora",
-    tags: ["ahora"],
-    tone: "now"
   },
   {
     title: 'Fragmento: "La Fiesta"',
@@ -45,6 +35,16 @@ const posts = [
     tags: ["escritos", "libro", "accidente"],
     tone: "ink"
   },
+  {
+  title: 'Fragmento: "El Barranco"',
+  href: "posts/el-barranco-fragmento1.html",
+  excerpt: "Inicio del capítulo 3. Despertar abajo: dolor, oscuridad y el impulso de moverse antes de desaparecer.",
+  date: "21 ene 2026",
+  section: "escritos",
+  tags: ["escritos", "libro", "accidente"],
+  tone: "ink"
+  },
+
   {
   title: "Escuchar música con un implante coclear",
   href: "posts/musica-implante.html",
