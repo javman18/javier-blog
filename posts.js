@@ -18,6 +18,16 @@ const posts = [
     tone: "work"
   },
   {
+  title: "Cómo evalúo agentes de IA: personalidad, RAG y similitud semántica",
+  href: "posts/evaluacion-agentes-ia.html",
+  excerpt: "Un vistazo práctico: cómo pruebo si un agente se comporta como debe y si el RAG realmente mejora las respuestas.",
+  date: "21 ene 2026",
+  section: "trabajo",
+  tags: ["trabajo", "ia", "rag", "evaluacion"],
+  tone: "work"
+},
+
+  {
     title: "Ahora",
     href: "ahora.html",
     excerpt: "Un estado rapido: en que ando, que estoy leyendo/escribiendo y que esta en pausa.",
