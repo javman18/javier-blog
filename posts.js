@@ -44,7 +44,15 @@ const posts = [
   tags: ["escritos", "libro", "accidente"],
   tone: "ink"
   },
-
+  {
+  title: "Cuando activaron mi implante coclear",
+  href: "posts/activacion-implante.html",
+  excerpt: "El día de la activación: el consultorio, la pregunta de la doctora y mi hermano grabando.",
+  date: "14 ene 2026",
+  section: "implante",
+  tags: ["implante", "familia", "audio"],
+  tone: "calm"
+  },
   {
   title: "Escuchar música con un implante coclear",
   href: "posts/musica-implante.html",
