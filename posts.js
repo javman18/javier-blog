@@ -48,7 +48,7 @@ const posts = [
   title: "Cuando activaron mi implante coclear",
   href: "posts/activacion-implante.html",
   excerpt: "El día de la activación: el consultorio, la pregunta de la doctora y mi hermano grabando.",
-  date: "14 ene 2026",
+  date: "22 ene 2026",
   section: "implante",
   tags: ["implante", "familia", "audio"],
   tone: "calm"
@@ -73,6 +73,9 @@ const posts = [
 }
 
 ];
+
+// Make posts available to post pages that load this script.
+window.posts = posts;
 
 const sections = [
   { id: "escritos", label: "Escritos" },
