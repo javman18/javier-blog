@@ -3,53 +3,89 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Javier</title>
-  <meta name="description" content="Un espacio personal: escritura, implante coclear, trabajo y notas." />
+  <title>Javier — Blog</title>
+  <meta name="description" content="Escritos, implante coclear, trabajo, salud y vida diaria." />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<script data-goatcounter="https://javierfuente.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
 <body>
-  <header class="header">
-    <div class="container header-inner">
+  <div class="wrap">
+    <!-- Header -->
+    <header class="site-header">
       <div class="brand-wrap">
-        <a class="brand" href="#">Javier</a>
-        <span class="subtitle">escritos · implante · vida diaria</span>
-      </div>
+        <div class="brand-row">
+          <a class="brand" href="/">Javier</a>
+          <nav class="top-nav" aria-label="Secciones">
+            <a href="#escritos">Escritos</a>
+            <a href="#implante">Implante</a>
+            <a href="#trabajo">Trabajo</a>
+            <a href="#salud">Salud</a>
+            <a href="#ahora">Ahora</a>
+          </nav>
+        </div>
 
-      <nav class="nav">
-        <a href="#escritos">Escritos</a>
-        <a href="#implante">Implante</a>
-        <a href="#trabajo">Trabajo</a>
-        <a href="#salud">Salud</a>
-        <a href="#ahora">Ahora</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="intro">
-      <p>
-        Escribo sobre el accidente, el implante coclear, el trabajo y la vida diaria. Sin adornos.
-      </p>
-    </section>
-
-    <section class="feed" id="feed" aria-label="Publicaciones recientes">
-      <p class="feed-empty">
-        Cargando publicaciones...
-      </p>
-      <noscript>
-        <p class="feed-empty">
-          Activa JavaScript para ver las publicaciones.
+        <p class="subtitle">escritura · implante · vida diaria</p>
+        <p class="lede">
+          Un espacio personal para escribir con honestidad. Fragmentos del libro, notas del implante,
+          cosas del trabajo y lo cotidiano.
         </p>
-      </noscript>
-    </section>
+      </div>
+    </header>
 
-    <footer class="footer">
-      <p>Javier © 2026</p>
+    <!-- Main -->
+    <main class="home">
+      <!-- Featured -->
+      <section class="home-section" aria-label="Destacados">
+        <div class="section-head">
+          <h2 class="section-title">Destacados</h2>
+          <p class="section-sub">Para empezar rápido</p>
+        </div>
+
+        <div id="featuredGrid" class="featured-grid">
+          <!-- JS -->
+        </div>
+      </section>
+
+      <!-- Recent -->
+      <section class="home-section" aria-label="Recientes">
+        <div class="section-head">
+          <h2 class="section-title">Recientes</h2>
+          <p class="section-sub">Últimas publicaciones</p>
+        </div>
+
+        <div id="recentList" class="recent-list">
+          <!-- JS -->
+        </div>
+      </section>
+
+      <!-- Archive by sections -->
+      <section class="home-section" aria-label="Archivo por tema">
+        <div class="section-head">
+          <h2 class="section-title">Archivo</h2>
+          <p class="section-sub">Explora por tema</p>
+        </div>
+
+        <div id="sectionBlocks" class="section-blocks">
+          <!-- JS -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="muted">© 2026 Javier</p>
     </footer>
-  </main>
-  <script src="posts.js" defer></script>
+  </div>
+
+  <!-- Data + renderer -->
+  <script src="posts.js"></script>
+  <script src="blog.js"></script>
+
+  <!-- GoatCounter (si ya lo tienes, déjalo aquí) -->
+  <script data-goatcounter="https://javierfuente.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <noscript>
+    <img src="https://javierfuente.goatcounter.com/count?p=/noscript" alt="">
+  </noscript>
 </body>
 </html>

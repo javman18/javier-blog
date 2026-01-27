@@ -142,4 +142,50 @@ if (feed) {
 
     feed.appendChild(sectionEl);
   });
+
+  function renderFeaturedPosts() {
+  const el = document.getElementById("featuredPosts");
+  if (!el) return;
+
+  const picks = [
+    "El libro del accidente: por qué lo estoy escribiendo",
+    'Fragmento: "La Fiesta"',
+    "Cuando activaron mi implante coclear"
+  ];
+
+  const featured = picks
+    .map(t => posts.find(p => p.title === t))
+    .filter(Boolean)
+    .slice(0,3);
+
+  el.innerHTML = "";
+
+  featured.forEach((post) => {
+    const article = document.createElement("article");
+    article.className = `post-card tone-${post.tone || "calm"}`;
+
+    const h = document.createElement("h3");
+    const a = document.createElement("a");
+    a.href = post.href;
+    a.textContent = post.title;
+    h.appendChild(a);
+
+    const ex = document.createElement("p");
+    ex.className = "excerpt";
+    ex.textContent = post.excerpt;
+
+    const meta = document.createElement("p");
+    meta.className = "meta";
+    meta.textContent = post.date;
+
+    article.appendChild(h);
+    article.appendChild(ex);
+    article.appendChild(meta);
+
+    el.appendChild(article);
+  });
+}
+
+renderFeaturedPosts();
+
 }
