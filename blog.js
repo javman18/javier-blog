@@ -8,7 +8,6 @@
   };
 
   function parseEsDate(s) {
-    // Expected: "14 ene 2026"
     if (!s || typeof s !== "string") return new Date(0);
     const parts = s.trim().toLowerCase().split(/\s+/);
     if (parts.length < 3) return new Date(0);
@@ -98,49 +97,39 @@
   // --- Sort newest first ---
   posts.sort((a, b) => parseEsDate(b.date) - parseEsDate(a.date));
 
-  // --- Featured selection (prioridad por títulos si existen) ---
-  const priorityTitles = [
-    "El libro del accidente: por qué lo estoy escribiendo",
-    'Fragmento: "La Fiesta"',
-    "Cuando activaron mi implante coclear",
-    "Escuchar música con un implante coclear"
-  ];
+  // ============================================================================
+  // FEATURED: tú eliges cuáles son grandes y cuáles pequeñas
+  //
+  // En posts.js marca cada post con:
+  //   featured: "big"    // para grande
+  //   featured: "small"  // para pequeña
+  //
+  // Ej:
+  // { ..., featured: "big" }
+  // { ..., featured: "small" }
+  // ============================================================================
+  const featuredBig = posts.filter(p => p && p.featured === "big");
+  const featuredSmall = posts.filter(p => p && p.featured === "small");
 
-  const featured = [];
-  const used = new Set();
+  // Límites: cambia a tu gusto
+  const BIG_LIMIT = 2;
+  const SMALL_LIMIT = 3;
 
-  for (const t of priorityTitles) {
-    const p = posts.find(x => x.title === t);
-    if (p && !used.has(p.href)) {
-      featured.push(p);
-      used.add(p.href);
-    }
-    if (featured.length >= 3) break;
-  }
+  const bigList = featuredBig.slice(0, BIG_LIMIT);
+  const smallList = featuredSmall.slice(0, SMALL_LIMIT);
 
-  // fallback si no hay suficientes
-  for (const p of posts) {
-    if (featured.length >= 3) break;
-    if (!used.has(p.href)) {
-      featured.push(p);
-      used.add(p.href);
-    }
-  }
+  // Excluir del resto (recent)
+  const used = new Set([...bigList, ...smallList].map(p => p.href));
 
-  // --- Render Featured grid: 1 grande + 2 pequeñas ---
+  // --- Render Featured grid: N grandes + N pequeñas ---
   const featuredEl = document.getElementById("featuredGrid");
   if (featuredEl) {
-    const hero = featured[0];
-    const side1 = featured[1];
-    const side2 = featured[2];
-
     featuredEl.innerHTML = `
       <div class="featured-hero">
-        ${hero ? postCard(hero, { big: true }) : ""}
+        ${bigList.map(p => postCard(p, { big: true })).join("")}
       </div>
       <div class="featured-side">
-        ${side1 ? postCard(side1) : ""}
-        ${side2 ? postCard(side2) : ""}
+        ${smallList.map(p => postCard(p)).join("")}
       </div>
     `;
   }

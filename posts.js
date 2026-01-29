@@ -6,7 +6,8 @@ const posts = [
   date: "14 ene 2026",
   section: "escritos",
   tags: ["escritos", "libro", "accidente"],
-  tone: "ink"
+  tone: "ink",
+  featured: "big"
   },
   {
     title: "En qué estoy trabajando",
@@ -15,7 +16,8 @@ const posts = [
     date: "05 ene 2026",
     section: "trabajo",
     tags: ["trabajo", "ia", "rag"],
-    tone: "work"
+    tone: "work",
+    featured: " "
   },
   {
   title: "Cómo evalúo agentes de IA: personalidad, RAG y similitud semántica",
@@ -24,7 +26,8 @@ const posts = [
   date: "21 ene 2026",
   section: "trabajo",
   tags: ["trabajo", "ia", "rag", "evaluacion"],
-  tone: "work"
+  tone: "work",
+  featured: " "
   },
   {
     title: 'Fragmento: "La Fiesta"',
@@ -33,7 +36,8 @@ const posts = [
     date: "20 ene 2026",
     section: "escritos",
     tags: ["escritos", "libro", "accidente"],
-    tone: "ink"
+    tone: "ink",
+    featured: "small"
   },
   {
   title: 'Fragmento: "El Barranco"',
@@ -42,7 +46,8 @@ const posts = [
   date: "21 ene 2026",
   section: "escritos",
   tags: ["escritos", "libro", "accidente"],
-  tone: "ink"
+  tone: "ink",
+  featured: " "
   },
   {
   title: "Cuando activaron mi implante coclear",
@@ -51,7 +56,8 @@ const posts = [
   date: "22 ene 2026",
   section: "implante",
   tags: ["implante", "familia", "audio"],
-  tone: "calm"
+  tone: "calm",
+  featured: "small"
   },
   {
   title: "Ventajas y desventajas de no escuchar",
@@ -60,7 +66,8 @@ const posts = [
   date: "28 ene 2026",
   section: "implante",
   tags: ["implante", "audio", "vida diaria"],
-  tone: "calm"
+  tone: "calm",
+  featured: " "
   },
   {
   title: "Escuchar música con un implante coclear",
@@ -69,7 +76,8 @@ const posts = [
   date: "14 ene 2026",
   section: "implante",
   tags: ["implante", "audio", "musica"],
-  tone: "calm"
+  tone: "calm",
+  featured: "small"
  },
  {
   title: "Disautonomía en la vida diaria (en mi caso)",
@@ -78,8 +86,20 @@ const posts = [
   date: "22 ene 2026",
   section: "salud",
   tags: ["salud", "disautonomia"],
-  tone: "calm"
-}
+  tone: "calm",
+  featured: " "
+},
+{
+  title: "El juego que he estado desarrollando (intermitentemente)",
+  href: "posts/juego-zombies-wip.html",
+  excerpt: "Un juego de zombies en desarrollo temprano. Animaciones, cambio de arma fluido y por qué avanzar lento también es avanzar.",
+  date: "29 ene 2026",
+  section: "trabajo",
+  tags: ["unity", "gamedev", "zombies", "wip", "animaciones"],
+  tone: "personal",
+  featured: "big"
+},
+
 
 ];
 
@@ -162,10 +182,8 @@ if (feed) {
     "Cuando activaron mi implante coclear"
   ];
 
-  const featured = picks
-    .map(t => posts.find(p => p.title === t))
-    .filter(Boolean)
-    .slice(0,3);
+  const featured = posts.filter(p => p.featured);
+
 
   el.innerHTML = "";
 
