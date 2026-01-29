@@ -54,6 +54,15 @@ const posts = [
   tone: "calm"
   },
   {
+  title: "Ventajas y desventajas de no escuchar",
+  href: "posts/ventajas-desventajas-no-escuchar.html",
+  excerpt: "Lo que gano y lo que pierdo al poder apagar el sonido del mundo.",
+  date: "28 ene 2026",
+  section: "implante",
+  tags: ["implante", "audio", "vida diaria"],
+  tone: "calm"
+  },
+  {
   title: "Escuchar música con un implante coclear",
   href: "posts/musica-implante.html",
   excerpt: "Cómo se escucha la música en mi caso: qué cambia, qué funciona mejor y qué cansa.",
