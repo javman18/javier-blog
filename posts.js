@@ -233,7 +233,30 @@ window.posts = [
     },
     tone: "personal",
     featured: ""
-  }
+  },
+  {
+  dateISO: "2026-02-07",
+  dateLabel: { es: "07 feb 2026", en: "Feb 7, 2026" },
+  title: {
+    es: "Cuando Addressables funcionaba en Android… pero no en iOS",
+    en: "When Addressables worked on Android… but not on iOS"
+  },
+  excerpt: {
+    es: "Un bug real de producción: Addressables remotos que funcionaban en Android pero fallaban en iOS por una opción poco visible del build.",
+    en: "A real production bug: remote Addressables working on Android but failing on iOS due to a barely visible build setting."
+  },
+  href: {
+    es: "/posts/addressables-ios-code-stripping.html",
+    en: "/en/posts/addressables-ios-code-stripping.html"
+  },
+  section: "trabajo",
+  tags: {
+    es: ["trabajo", "unity", "addressables", "ios", "android", "debugging"],
+    en: ["work", "unity", "addressables", "ios", "android", "debugging"]
+  },
+  tone: "work"
+}
+
 ];
 
 
