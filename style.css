@@ -561,3 +561,6 @@ body::before{
 }
 .muted{ color: var(--muted); }
 
+.lang-switch a { opacity: .6; text-decoration: none; }
+.lang-switch a.active { opacity: 1; font-weight: 600; }
+.lang-switch .sep { opacity: .4; margin: 0 .35rem; }

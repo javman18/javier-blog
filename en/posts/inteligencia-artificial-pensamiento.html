@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What I’m working on — Javier</title>
+  <meta name="description" content="What I’m working on right now: AI agents, RAG systems, and constant iteration." />
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+
+<script data-goatcounter="https://javierfuente.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <a class="brand" href="../index.html">Javier</a>
+        <span class="subtitle">writing · implant · daily life</span>
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html#escritos">Writing</a>
+        <a href="../index.html#implante">Implant</a>
+        <a href="../index.html#trabajo">Work</a>
+        <a href="../ahora.html">Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="post">
+      <header class="post-header">
+        <h1>What I’m working on</h1>
+        <p class="post-meta">
+          <span class="post-date" data-post-date>Jan 05, 2026</span> ·
+          <span class="tag">work</span>
+        </p>
+      </header>
+
+      <section class="post-content">
+        <p>
+          Right now I’m working on building AI agents based on large language models,
+          specifically systems that use RAG (retrieval-augmented generation).
+        </p>
+
+        <p>
+          Most of my time isn’t spent writing “nice” prompts,
+          but tuning how the system retrieves information
+          and how that context is passed to the model
+          so it responds the way each project expects.
+        </p>
+
+        <p>
+          In AI, there’s almost never a final configuration.
+          There’s always something new:
+          a different model, a parameter that shifts behavior,
+          or a limitation you hadn’t noticed before.
+        </p>
+
+        <p>
+          With RAG in particular, a big part of the work is deciding
+          how documents are split before being stored in the knowledge base.
+          Chunk size, overlap, and how much context you preserve
+          make a huge difference in the responses.
+        </p>
+
+        <p>
+          There are also many decisions around retrieval itself:
+          what kind of search to use, how many results to bring back,
+          how to filter them, and in what order to pass them to the model.
+          There’s no single correct approach —
+          it depends heavily on the type of information
+          and what the user is actually expecting.
+        </p>
+
+        <p>
+          Part of the job is testing, measuring, adjusting, and testing again.
+          Sometimes a small change improves results a lot.
+          Other times it makes things worse, without an obvious reason.
+        </p>
+
+        <p>
+          What’s interesting is that you rarely feel “done”.
+          You reach an acceptable point and know that tomorrow,
+          with a new model or a different approach,
+          things will need to move again.
+        </p>
+
+        <p>
+          I don’t say this as a complaint.
+          It’s simply how this kind of work functions right now.
+        </p>
+      </section>
+
+      <footer class="post-footer">
+        <nav class="post-nav">
+          <a href="../index.html">← Back to home</a>
+        </nav>
+      </footer>
+    </article>
+
+    <footer class="footer">
+      <p>© 2026 Javier</p>
+    </footer>
+  </main>
+
+  <script src="../../posts.js" defer></script>
+  <script src="../../post-meta.js" defer></script>
+</body>
+</html>
