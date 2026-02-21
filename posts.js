@@ -257,8 +257,8 @@ window.posts = [
   tone: "work"
 },
 {
-  dateISO: "2026-02-10",
-  dateLabel: { es: "10 feb 2026", en: "Feb 10, 2026" },
+  dateISO: "2026-02-21",
+  dateLabel: { es: "21 feb 2026", en: "Feb 21, 2026" },
   title: {
     es: "Lo que me han dicho sobre Play & Learn",
     en: "What people have told me about Play & Learn"
