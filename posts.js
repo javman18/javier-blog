@@ -255,6 +255,29 @@ window.posts = [
     en: ["work", "unity", "addressables", "ios", "android", "debugging"]
   },
   tone: "work"
+},
+{
+  dateISO: "2026-02-10",
+  dateLabel: { es: "10 feb 2026", en: "Feb 10, 2026" },
+  title: {
+    es: "Lo que me han dicho sobre Play & Learn",
+    en: "What people have told me about Play & Learn"
+  },
+  excerpt: {
+    es: "Una madre descargó la app primero para probarla. Le gustó tanto que llamó para preguntar si podía usarla en dos dispositivos.",
+    en: "A parent downloaded the app first to test it. She liked it so much she called to ask if it could be installed on two devices."
+  },
+  href: {
+    es: "/posts/play-and-learn-feedback.html",
+    en: "/en/posts/play-and-learn-feedback.html"
+  },
+  section: "trabajo",
+  tags: {
+    es: ["trabajo", "play & learn", "educacion", "producto"],
+    en: ["work", "play & learn", "education", "product"]
+  },
+  tone: "personal",
+  featured: "big"
 }
 
 ];
