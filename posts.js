@@ -278,6 +278,29 @@ window.posts = [
   },
   tone: "personal",
   featured: "big"
+},
+{
+  dateISO: "2026-03-07",
+  dateLabel: { es: "07 mar 2026", en: "Mar 7, 2026" },
+  title: {
+    es: "Cuando no mides el volumen de tu propia voz",
+    en: "When you can’t tell how loud your own voice is"
+  },
+  excerpt: {
+    es: "Restaurantes llenos, ruido por todos lados y yo pidiendo la cuenta como si estuviera anunciando una emergencia.",
+    en: "Packed restaurants, noise everywhere, and me asking for the check like I was announcing an emergency."
+  },
+  href: {
+    es: "/posts/volumen-propia-voz.html",
+    en: "/en/posts/volumen-propia-voz.html"
+  },
+  section: "implante",
+  tags: {
+    es: ["implante", "audio", "vida diaria", "restaurantes"],
+    en: ["implant", "audio", "daily life", "restaurants"]
+  },
+  tone: "calm",
+  featured: "small"
 }
 
 ];
