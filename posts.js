@@ -208,7 +208,7 @@ window.posts = [
       en: ["health", "dysautonomia"]
     },
     tone: "calm",
-    featured: "small"
+    featured: ""
   },
 
   {
@@ -277,7 +277,7 @@ window.posts = [
     en: ["work", "play & learn", "education", "product"]
   },
   tone: "personal",
-  featured: "big"
+  featured: "small"
 },
 {
   dateISO: "2026-03-07",
@@ -301,6 +301,29 @@ window.posts = [
   },
   tone: "calm",
   featured: "small"
+},
+{
+  dateISO: "2026-03-21",
+  dateLabel: { es: "21 mar 2026", en: "Mar 21, 2026" },
+  title: {
+    es: "Cómo cambié después del accidente",
+    en: "How I Changed After the Accident"
+  },
+  excerpt: {
+    es: "Antes me importaban la fiesta y estar con gente; después me volví más reservado, más disciplinado y empecé otra vida en programación.",
+    en: "I used to care about parties and being around people; afterward I became more reserved, more disciplined, and started a different life in programming."
+  },
+  href: {
+    es: "/posts/como-cambie-despues-del-accidente.html",
+    en: "/en/posts/how-i-changed-after-the-accident.html"
+  },
+  section: "escritos",
+  tags: {
+    es: ["escritos", "accidente", "cambio"],
+    en: ["writing", "accident", "change"]
+  },
+  tone: "ink",
+  featured: "big"
 }
 
 ];
