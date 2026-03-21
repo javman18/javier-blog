@@ -310,8 +310,8 @@ window.posts = [
     en: "How I Changed After the Accident"
   },
   excerpt: {
-    es: "Antes me importaban la fiesta y estar con gente; después me volví más reservado, más disciplinado y empecé otra vida en programación.",
-    en: "I used to care about parties and being around people; afterward I became more reserved, more disciplined, and started a different life in programming."
+    es: "Cómo era antes y qué cambió en mí después del accidente.",
+    en: "Who I was before the accident and what changed in me afterward."
   },
   href: {
     es: "/posts/como-cambie-despues-del-accidente.html",
