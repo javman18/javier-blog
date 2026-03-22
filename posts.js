@@ -324,6 +324,29 @@ window.posts = [
   },
   tone: "ink",
   featured: "big"
+},
+{
+  dateISO: "2026-03-22",
+  dateLabel: { es: "22 mar 2026", en: "Mar 22, 2026" },
+  title: {
+    es: "Volver al ruido",
+    en: "Back to Noise"
+  },
+  excerpt: {
+    es: "Antes del accidente no me molestaban los lugares con música fuerte. Después, me estresaban. Hoy noté que algo cambió.",
+    en: "Before the accident, loud places did not bother me. Afterward, they stressed me out. Today I noticed something had changed."
+  },
+  href: {
+    es: "/posts/volver-al-ruido.html",
+    en: "/en/posts/volver-al-ruido.html"
+  },
+  section: "implante",
+  tags: {
+    es: ["implante", "audio", "adaptación"],
+    en: ["implant", "hearing", "adaptation"]
+  },
+  tone: "calm",
+  featured: "small"
 }
 
 ];
