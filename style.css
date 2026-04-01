@@ -564,3 +564,19 @@ body::before{
 .lang-switch a { opacity: .6; text-decoration: none; }
 .lang-switch a.active { opacity: 1; font-weight: 600; }
 .lang-switch .sep { opacity: .4; margin: 0 .35rem; }
+
+.comments{
+  margin-top: 28px;
+  padding: 20px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.comments h2{
+  margin: 0 0 14px;
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-size: 22px;
+  line-height: 1.3;
+}
