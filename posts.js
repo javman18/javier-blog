@@ -323,7 +323,7 @@ window.posts = [
     en: ["writing", "accident", "change"]
   },
   tone: "ink",
-  featured: "big"
+  featured: ""
 },
 {
   dateISO: "2026-03-22",
