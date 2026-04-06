@@ -347,6 +347,29 @@ window.posts = [
   },
   tone: "calm",
   featured: "small"
+},
+{
+  dateISO: "2026-04-06",
+  dateLabel: { es: "06 abr 2026", en: "Apr 06, 2026" },
+  title: {
+    es: "El síndrome de la mesa de la cena",
+    en: "The Dinner Table Syndrome"
+  },
+  excerpt: {
+    es: "Estar en una mesa con varias personas y no poder seguir la conversación: cómo se siente y por qué pasa.",
+    en: "Being at a table with multiple people and not being able to follow the conversation: what it feels like and why it happens."
+  },
+  href: {
+    es: "/posts/sindrome-mesa-cena.html",
+    en: "/en/posts/sindrome-mesa-cena.html"
+  },
+  section: "implante",
+  tags: {
+    es: ["implante", "audio", "vida diaria"],
+    en: ["implant", "audio", "daily life"]
+  },
+  tone: "calm",
+  featured: "big"
 }
 
 ];
