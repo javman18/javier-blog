@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+lang: en
+isHome: true
+htmlTitle: "Javier — Blog"
+description: "Writing, cochlear implant, work, body, and daily life."
+---
+{% set posts = collections.postsEn %}
+{% set featuredPosts = collections.featuredEn %}
+{% include "components/home-main.njk" %}

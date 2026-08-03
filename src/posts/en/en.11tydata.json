@@ -1,0 +1,6 @@
+{
+  "layout": "layouts/post.njk",
+  "lang": "en",
+  "tags": ["postsEn"],
+  "permalink": "/en/posts/{{ page.fileSlug }}.html"
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDescription }}" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <div class="brand-wrap">
+        <div class="brand-row">
+          <a class="brand" href="{{ '/en/' if lang == 'en' else '/' }}">Javier</a>
+          <nav class="top-nav" aria-label="{{ site.strings[lang].navAria }}">
+            {% for cat in taxonomy.categories %}
+            <a href="{{ '/en/' if lang == 'en' else '/' }}#{{ cat.id }}">{{ cat.label[lang] }}</a>
+            {% endfor %}
+            <a href="{{ site.portfolioUrl }}" target="_blank" rel="noopener" class="nav-external">{{ site.strings[lang].portfolio }}</a>
+          </nav>
+        </div>
+
+        <p class="subtitle">{{ site.strings[lang].subtitle }}</p>
+
+        {% if isHome %}
+        <p class="lede">{{ site.strings[lang].lede }}</p>
+        <div class="lang-switch">
+          <a href="/" data-lang="es" class="{{ 'active' if lang == 'es' }}">ES</a>
+          <span class="sep">|</span>
+          <a href="/en/" data-lang="en" class="{{ 'active' if lang == 'en' }}">EN</a>
+        </div>
+        {% endif %}
+      </div>
+    </header>
+
+    {{ content | safe }}
+
+    <footer class="site-footer">
+      <p class="muted">© 2026 Javier</p>
+      {% if isHome %}
+      <p class="muted">
+        {{ site.strings[lang].workCv }}
+        <a href="{{ site.portfolioUrl }}" target="_blank" rel="noopener">{{ site.strings[lang].portfolio }}</a>
+      </p>
+      {% endif %}
+    </footer>
+  </div>
+
+  {% if isPost %}
+  <script src="/giscus.js" defer></script>
+  {% endif %}
+
+  <script data-goatcounter="{{ site.goatcounter }}"
+          async src="//gc.zgo.at/count.js"></script>
+  <noscript>
+    <img src="{{ site.goatcounter }}?p=/noscript" alt="">
+  </noscript>
+</body>
+</html>

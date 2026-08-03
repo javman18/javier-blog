@@ -1,0 +1,21 @@
+{% macro card(post, lang, big=false) %}
+<article class="post-card {{ 'post-card--big' if big }}">
+  <div class="meta">
+    <time>{{ post.data.date | formatDate(lang) }}</time> · {{ post.data.category | categoryLabel(lang) }}
+  </div>
+  <h3 class="{{ 'post-title-big' if big else 'post-title' }}">
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+  </h3>
+  {% if post.data.excerpt %}
+  <p class="excerpt {{ 'excerpt--big' if big }}">{{ post.data.excerpt }}</p>
+  {% endif %}
+  {% if post.data.topics and post.data.topics.length %}
+  <div class="pills">
+    {% for t in post.data.topics %}<span class="pill">{{ t | topicLabel(lang) }}</span>{% endfor %}
+  </div>
+  {% endif %}
+  <div class="card-actions">
+    <a class="read-link" href="{{ post.url }}">{{ site.strings[lang].readMore }}</a>
+  </div>
+</article>
+{% endmacro %}

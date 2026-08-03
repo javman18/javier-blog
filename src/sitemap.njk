@@ -1,0 +1,15 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.javierfuente.com/</loc></url>
+  <url><loc>https://www.javierfuente.com/en/</loc></url>
+{%- for p in collections.postsEs %}
+  <url><loc>https://www.javierfuente.com{{ p.url }}</loc></url>
+{%- endfor %}
+{%- for p in collections.postsEn %}
+  <url><loc>https://www.javierfuente.com{{ p.url }}</loc></url>
+{%- endfor %}
+</urlset>

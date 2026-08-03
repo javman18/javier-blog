@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+isPost: true
+---
+<main class="post-main">
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title-h1">{{ title }}</h1>
+      <div class="meta">
+        <time>{{ date | formatDate(lang) }}</time> · {{ category | categoryLabel(lang) }}
+      </div>
+      {% if topics and topics.length %}
+      <div class="pills">
+        {% for t in topics %}<span class="pill">{{ t | topicLabel(lang) }}</span>{% endfor %}
+      </div>
+      {% endif %}
+    </header>
+
+    <section class="post-content">
+      {{ content | safe }}
+    </section>
+
+    <section class="comments">
+      <h2>{{ site.strings[lang].comments }}</h2>
+      <div class="comments-host"></div>
+    </section>
+
+    <footer class="post-footer">
+      <nav class="post-nav">
+        <a href="{{ '/en/' if lang == 'en' else '/' }}">{{ site.strings[lang].backHome }}</a>
+      </nav>
+    </footer>
+  </article>
+</main>

@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+lang: es
+isHome: true
+htmlTitle: "Javier — Blog"
+description: "Escritos, implante coclear, trabajo, cuerpo y vida diaria."
+---
+{% set posts = collections.postsEs %}
+{% set featuredPosts = collections.featuredEs %}
+{% include "components/home-main.njk" %}
