@@ -16,8 +16,8 @@ window.posts = [
     },
     section: "escritos",
     tags: {
-      es: ["escritos", "libro", "accidente"],
-      en: ["writing", "book", "accident"]
+      es: ["Accidente"],
+      en: ["Accident"]
     },
     tone: "ink",
     featured: "big"
@@ -40,8 +40,8 @@ window.posts = [
     },
     section: "trabajo",
     tags: {
-      es: ["trabajo", "ia", "rag"],
-      en: ["work", "ai", "rag"]
+      es: ["IA"],
+      en: ["AI"]
     },
     tone: "work"
   },
@@ -63,8 +63,8 @@ window.posts = [
     },
     section: "trabajo",
     tags: {
-      es: ["trabajo", "ia", "rag", "evaluacion"],
-      en: ["work", "ai", "rag", "evaluation"]
+      es: ["IA"],
+      en: ["AI"]
     },
     tone: "work"
   },
@@ -86,11 +86,10 @@ window.posts = [
     },
     section: "escritos",
     tags: {
-      es: ["escritos", "libro", "accidente"],
-      en: ["writing", "book", "accident"]
+      es: ["Accidente"],
+      en: ["Accident"]
     },
-    tone: "ink",
-    featured: "small"
+    tone: "ink"
   },
 
   {
@@ -110,8 +109,8 @@ window.posts = [
     },
     section: "escritos",
     tags: {
-      es: ["escritos", "libro", "accidente"],
-      en: ["writing", "book", "accident"]
+      es: ["Accidente"],
+      en: ["Accident"]
     },
     tone: "ink"
   },
@@ -133,11 +132,11 @@ window.posts = [
     },
     section: "implante",
     tags: {
-      es: ["implante", "familia", "audio"],
-      en: ["implant", "family", "audio"]
+      es: ["Audio"],
+      en: ["Sound"]
     },
     tone: "calm",
-    featured: "big"
+    featured: "small"
   },
 
   {
@@ -157,8 +156,8 @@ window.posts = [
     },
     section: "implante",
     tags: {
-      es: ["implante", "audio", "vida diaria"],
-      en: ["implant", "audio", "daily life"]
+      es: ["Audio", "Vida diaria"],
+      en: ["Sound", "Daily life"]
     },
     tone: "calm"
   },
@@ -180,11 +179,10 @@ window.posts = [
     },
     section: "implante",
     tags: {
-      es: ["implante", "audio", "musica"],
-      en: ["implant", "audio", "music"]
+      es: ["Audio"],
+      en: ["Sound"]
     },
-    tone: "calm",
-    featured: "small"
+    tone: "calm"
   },
 
   {
@@ -202,13 +200,12 @@ window.posts = [
       es: "/posts/salud-disautonomia-vida-diaria.html",
       en: "/en/posts/salud-disautonomia-vida-diaria.html"
     },
-    section: "salud",
+    section: "cuerpo",
     tags: {
-      es: ["salud", "disautonomia"],
-      en: ["health", "dysautonomia"]
+      es: ["Cuerpo", "Vida diaria"],
+      en: ["Body", "Daily life"]
     },
-    tone: "calm",
-    featured: ""
+    tone: "calm"
   },
 
   {
@@ -228,11 +225,10 @@ window.posts = [
     },
     section: "trabajo",
     tags: {
-      es: ["unity", "gamedev", "zombies", "wip", "animaciones"],
-      en: ["unity", "gamedev", "zombies", "wip", "animations"]
+      es: ["Desarrollo"],
+      en: ["Development"]
     },
-    tone: "personal",
-    featured: ""
+    tone: "personal"
   },
   {
   dateISO: "2026-02-07",
@@ -251,8 +247,8 @@ window.posts = [
   },
   section: "trabajo",
   tags: {
-    es: ["trabajo", "unity", "addressables", "ios", "android", "debugging"],
-    en: ["work", "unity", "addressables", "ios", "android", "debugging"]
+    es: ["Desarrollo"],
+    en: ["Development"]
   },
   tone: "work"
 },
@@ -273,11 +269,10 @@ window.posts = [
   },
   section: "trabajo",
   tags: {
-    es: ["trabajo", "play & learn", "educacion", "producto"],
-    en: ["work", "play & learn", "education", "product"]
+    es: ["Desarrollo"],
+    en: ["Development"]
   },
-  tone: "personal",
-  featured: "small"
+  tone: "personal"
 },
 {
   dateISO: "2026-03-07",
@@ -296,11 +291,10 @@ window.posts = [
   },
   section: "implante",
   tags: {
-    es: ["implante", "audio", "vida diaria", "restaurantes"],
-    en: ["implant", "audio", "daily life", "restaurants"]
+    es: ["Audio", "Vida diaria"],
+    en: ["Sound", "Daily life"]
   },
-  tone: "calm",
-  featured: "small"
+  tone: "calm"
 },
 {
   dateISO: "2026-03-21",
@@ -315,15 +309,14 @@ window.posts = [
   },
   href: {
     es: "/posts/como-cambie-despues-del-accidente.html",
-    en: "/en/posts/how-i-changed-after-the-accident.html"
+    en: "/en/posts/como-cambie-despues-del-accidente.html"
   },
   section: "escritos",
   tags: {
-    es: ["escritos", "accidente", "cambio"],
-    en: ["writing", "accident", "change"]
+    es: ["Accidente"],
+    en: ["Accident"]
   },
-  tone: "ink",
-  featured: ""
+  tone: "ink"
 },
 {
   dateISO: "2026-03-22",
@@ -342,11 +335,10 @@ window.posts = [
   },
   section: "implante",
   tags: {
-    es: ["implante", "audio", "adaptación"],
-    en: ["implant", "hearing", "adaptation"]
+    es: ["Audio"],
+    en: ["Sound"]
   },
-  tone: "calm",
-  featured: "small"
+  tone: "calm"
 },
 {
   dateISO: "2026-04-06",
@@ -365,11 +357,11 @@ window.posts = [
   },
   section: "implante",
   tags: {
-    es: ["implante", "audio", "vida diaria"],
-    en: ["implant", "audio", "daily life"]
+    es: ["Audio", "Vida diaria"],
+    en: ["Sound", "Daily life"]
   },
   tone: "calm",
-  featured: "big"
+  featured: "small"
 }
 
 ];

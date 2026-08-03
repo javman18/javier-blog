@@ -38,9 +38,8 @@
   const sectionMap = {
     escritos: { es: "Escritos", en: "Writing" },
     implante: { es: "Implante", en: "Implant" },
-    trabajo: { es: "Trabajo", en: "Work" },
-    salud:   { es: "Salud",   en: "Health" },
-    ahora:   { es: "Ahora",   en: "Now" },
+    cuerpo:   { es: "Cuerpo",   en: "Body" },
+    trabajo:  { es: "Trabajo",  en: "Work" },
   };
 
   function sectionLabel(sectionId) {
@@ -98,7 +97,7 @@
   }
 
   function sectionBlock(sectionId, label, items) {
-    const list = items.slice(0, 4).map(p => {
+    const list = items.map(p => {
       const href = esc(pick(p.href) || "#");
       const title = esc(pick(p.title));
       const date = esc(pick(p.dateLabel));
@@ -106,13 +105,12 @@
     }).join("");
 
     return `
-      <section id="${esc(sectionId)}" class="section-block">
-        <div class="section-block-head">
+      <details id="${esc(sectionId)}" class="section-block">
+        <summary class="section-block-head">
           <h3 class="section-block-title">${esc(label)}</h3>
-          <a class="section-jump" href="#top">↑</a>
-        </div>
+        </summary>
         <ul class="section-block-list">${list}</ul>
-      </section>
+      </details>
     `;
   }
 
@@ -122,8 +120,8 @@
     const featuredBig = posts.filter(p => p && p.featured === "big");
     const featuredSmall = posts.filter(p => p && p.featured === "small");
 
-    const BIG_LIMIT = 2;
-    const SMALL_LIMIT = 3;
+    const BIG_LIMIT = 1;
+    const SMALL_LIMIT = 2;
 
     const bigList = featuredBig.slice(0, BIG_LIMIT);
     const smallList = featuredSmall.slice(0, SMALL_LIMIT);
@@ -155,7 +153,7 @@
   // Render section blocks
   const sectionBlocksEl = document.getElementById("sectionBlocks");
   if (sectionBlocksEl) {
-    const sections = ["escritos", "implante", "trabajo", "salud", "ahora"];
+    const sections = ["escritos", "implante", "cuerpo", "trabajo"];
 
     const html = sections.map(id => {
       const items = posts.filter(p => p.section === id);
@@ -165,6 +163,17 @@
 
     sectionBlocksEl.innerHTML =
       html || `<p class="muted">${lang === "en" ? "No posts yet." : "Aún no hay posts."}</p>`;
+
+    // Si llegan con #escritos, #implante, etc. (desde el nav o un post), abre ese bloque
+    const openTargetFromHash = () => {
+      const target = document.getElementById(location.hash.slice(1));
+      if (target && target.tagName === "DETAILS") {
+        target.open = true;
+        target.scrollIntoView({ block: "start" });
+      }
+    };
+    if (location.hash) openTargetFromHash();
+    window.addEventListener("hashchange", openTargetFromHash);
   }
 
   // ============================================================================
@@ -174,7 +183,7 @@
   if (feed) {
     feed.innerHTML = "";
 
-    const sections = ["escritos", "implante", "trabajo", "salud", "ahora"];
+    const sections = ["escritos", "implante", "cuerpo", "trabajo"];
 
     sections.forEach((id) => {
       const sectionPosts = posts.filter((p) => p.section === id);

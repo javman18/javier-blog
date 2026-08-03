@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   script.setAttribute("data-emit-metadata", "0");
   script.setAttribute("data-input-position", "bottom");
   script.setAttribute("data-theme", "preferred_color_scheme");
-  script.setAttribute("data-lang", "es");
+  script.setAttribute("data-lang", document.documentElement.lang || "es");
   script.setAttribute("crossorigin", "anonymous");
   script.async = true;
 

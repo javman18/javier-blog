@@ -4,41 +4,40 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The game I’ve been developing (intermittently) — Javier</title>
-  <meta name="description" content="An early-stage zombie game. Animations, smooth weapon switching, and why slow progress still counts." />
+  <meta name="description" content="An early-stage zombie game. Animations, smooth weapon switching, and why moving slowly is still moving forward." />
   <link rel="stylesheet" href="../../style.css" />
 </head>
 
-<script data-goatcounter="https://javierfuente.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-
 <body>
-  <header class="header">
-    <div class="container header-inner">
+  <div class="wrap">
+    <header class="site-header">
       <div class="brand-wrap">
-        <a class="brand" href="../index.html">Javier</a>
-        <span class="subtitle">writing · implant · work</span>
+        <div class="brand-row">
+          <a class="brand" href="../index.html">Javier</a>
+          <nav class="top-nav" aria-label="Sections">
+            <a href="../index.html#escritos">Writing</a>
+            <a href="../index.html#implante">Implant</a>
+            <a href="../index.html#cuerpo">Body</a>
+            <a href="../index.html#trabajo">Work</a>
+            <a href="https://javman18.github.io/" target="_blank" rel="noopener" class="nav-external">Portfolio</a>
+          </nav>
+        </div>
+        <p class="subtitle">writing · implant · daily life</p>
       </div>
+    </header>
 
-      <nav class="nav">
-        <a href="../index.html#escritos">Writing</a>
-        <a href="../index.html#implante">Implant</a>
-        <a href="../index.html#trabajo">Work</a>
-        <a href="../index.html#ahora">Now</a>
-      </nav>
-    </div>
-  </header>
+    <main class="post-main">
+      <article class="post">
+        <header class="post-header">
+          <h1 class="post-title-h1">The game I’ve been developing (intermittently)</h1>
+          <div class="meta">
+            <time>Jan 29, 2026</time> · Work
+          </div>
+          <div class="pills"><span class="pill">Development</span></div>
+        </header>
 
-  <main class="container post">
-    <article>
-      <header class="post-header">
-        <h1>The game I’ve been developing (intermittently)</h1>
-        <p class="post-meta">
-          <span data-post-date></span> · Work
-        </p>
-      </header>
-
-      <div class="post-content">
-        <p>
+        <section class="post-content">
+<p>
           This game has existed for a while… just not consistently.
         </p>
 
@@ -104,21 +103,32 @@
           Working on it only on weekends or at night makes every step matter more.
           For now, that’s enough.
         </p>
+        </section>
+
+        <section class="comments">
+          <h2>Comments</h2>
+          <div class="comments-host"></div>
+        </section>
 
         <footer class="post-footer">
           <nav class="post-nav">
             <a href="../index.html">← Back to home</a>
           </nav>
         </footer>
-      </div>
-    </article>
+      </article>
+    </main>
 
-    <footer class="footer">
-      <p>© 2026 Javier</p>
+    <footer class="site-footer">
+      <p class="muted">© 2026 Javier</p>
     </footer>
-  </main>
+  </div>
 
-  <script src="../../posts.js" defer></script>
-  <script src="../../post-meta.js" defer></script>
+  <script src="../../giscus.js" defer></script>
+
+  <script data-goatcounter="https://javierfuente.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <noscript>
+    <img src="https://javierfuente.goatcounter.com/count?p=/noscript" alt="">
+  </noscript>
 </body>
 </html>
