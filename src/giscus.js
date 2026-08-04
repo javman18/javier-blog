@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const commentsSection = document.querySelector(".comments");
-  if (!commentsSection) return;
-
-  const host = commentsSection.querySelector(".comments-host");
+  const host = document.querySelector(".comments-host");
   if (!host) return;
 
   const script = document.createElement("script");
