@@ -1,0 +1,28 @@
+---
+permalink: /en/feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Javier — Blog</title>
+  <subtitle>{{ site.strings.en.lede }}</subtitle>
+  <link href="{{ site.url }}/en/feed.xml" rel="self" />
+  <link href="{{ site.url }}/en/" />
+  <updated>{{ collections.postsEn | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ site.url }}/en/</id>
+  <author>
+    <name>{{ site.name }}</name>
+  </author>
+{%- for post in collections.postsEn %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ site.url }}{{ post.url }}" />
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ site.url }}{{ post.url }}</id>
+    {%- if post.data.excerpt %}
+    <summary>{{ post.data.excerpt }}</summary>
+    {%- endif %}
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(site.url) }}</content>
+  </entry>
+{%- endfor %}
+</feed>

@@ -6,6 +6,8 @@
   <title>{{ pageTitle }}</title>
   <meta name="description" content="{{ pageDescription }}" />
   <link rel="stylesheet" href="/style.css" />
+  <link rel="alternate" type="application/atom+xml" title="Javier — Blog"
+        href="{{ '/en/feed.xml' if lang == 'en' else '/feed.xml' }}" />
 </head>
 
 <body>
@@ -38,7 +40,10 @@
     {{ content | safe }}
 
     <footer class="site-footer">
-      <p class="muted">© 2026 Javier</p>
+      <p class="muted">
+        © 2026 Javier ·
+        <a href="{{ '/en/feed.xml' if lang == 'en' else '/feed.xml' }}">RSS</a>
+      </p>
       {% if isHome %}
       <p class="muted">
         {{ site.strings[lang].workCv }}

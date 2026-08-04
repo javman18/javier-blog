@@ -1,5 +1,6 @@
 module.exports = {
   name: "Javier",
+  url: "https://www.javierfuente.com",
   portfolioUrl: "https://javman18.github.io/",
   goatcounter: "https://javierfuente.goatcounter.com/count",
   giscus: {
@@ -7,6 +8,10 @@ module.exports = {
     repoId: "R_kgDOQ6GC4A",
     category: "Announcements",
     categoryId: "DIC_kwDOQ6GC4M4C505T",
+  },
+  buttondown: {
+    action: "https://buttondown.com/api/emails/embed-subscribe/fuente",
+    referUrl: "https://buttondown.com/refer/fuente",
   },
   strings: {
     es: {
@@ -24,6 +29,11 @@ module.exports = {
       backHome: "← Volver al inicio",
       comments: "Comentarios",
       commentsSub: "¿Qué piensas? Deja un comentario o cuéntame qué te gustaría leer.",
+      subscribeTitle: "Suscríbete",
+      subscribeSub: "Un correo cuando publique algo nuevo. Nada más.",
+      subscribeLabel: "Tu correo",
+      subscribeButton: "Suscribirme",
+      subscribePowered: "Impulsado por Buttondown",
       workCv: "Trabajo profesional y CV →",
     },
     en: {
@@ -41,6 +51,11 @@ module.exports = {
       backHome: "← Back to home",
       comments: "Comments",
       commentsSub: "What do you think? Leave a comment or tell me what you'd like to read.",
+      subscribeTitle: "Subscribe",
+      subscribeSub: "An email when I publish something new. That's it.",
+      subscribeLabel: "Your email",
+      subscribeButton: "Subscribe",
+      subscribePowered: "Powered by Buttondown",
       workCv: "Professional work and CV →",
     },
   },

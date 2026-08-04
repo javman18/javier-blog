@@ -1,6 +1,7 @@
 const taxonomy = require("./src/_data/taxonomy.js");
 const featured = require("./src/_data/featured.js");
 const markdownIt = require("markdown-it");
+const pluginRss = require("@11ty/eleventy-plugin-rss").default;
 
 function slugFromUrl(url) {
   return url.split("/").filter(Boolean).pop().replace(/\.html$/, "");
@@ -17,6 +18,8 @@ function resolveFeatured(posts) {
 }
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+
   // breaks:true — cualquier salto de línea en el .md se vuelve <br>, sin
   // depender de dos espacios invisibles al final de línea (fáciles de perder).
   eleventyConfig.setLibrary("md", markdownIt({ html: true, breaks: true, linkify: true }));

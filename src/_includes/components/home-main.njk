@@ -68,6 +68,24 @@
     </div>
   </section>
 
+  <section class="home-section" aria-label="{{ site.strings[lang].subscribeTitle }}">
+    <div class="section-head">
+      <h2 class="section-title">{{ site.strings[lang].subscribeTitle }}</h2>
+      <p class="section-sub">{{ site.strings[lang].subscribeSub }}</p>
+    </div>
+
+    <div class="subscribe-card">
+      <form action="{{ site.buttondown.action }}" method="post" class="subscribe-form">
+        <label for="bd-email" class="sr-only">{{ site.strings[lang].subscribeLabel }}</label>
+        <input type="email" name="email" id="bd-email" placeholder="{{ site.strings[lang].subscribeLabel }}" required />
+        <button type="submit">{{ site.strings[lang].subscribeButton }}</button>
+      </form>
+      <p class="subscribe-note muted">
+        <a href="{{ site.buttondown.referUrl }}" target="_blank" rel="noopener">{{ site.strings[lang].subscribePowered }}</a>
+      </p>
+    </div>
+  </section>
+
   <section class="home-section" aria-label="{{ site.strings[lang].comments }}">
     <div class="section-head">
       <h2 class="section-title">{{ site.strings[lang].comments }}</h2>
