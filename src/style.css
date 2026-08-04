@@ -356,6 +356,14 @@ time{
   line-height: 1.3;
 }
 
+.comments-card{
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  min-height: 120px;
+}
+
 /* ==========================================================
    Página de post individual
 ========================================================== */

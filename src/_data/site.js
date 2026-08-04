@@ -23,6 +23,7 @@ module.exports = {
       readMore: "Leer →",
       backHome: "← Volver al inicio",
       comments: "Comentarios",
+      commentsSub: "¿Qué piensas? Deja un comentario o cuéntame qué te gustaría leer.",
       workCv: "Trabajo profesional y CV →",
     },
     en: {
@@ -39,6 +40,7 @@ module.exports = {
       readMore: "Read →",
       backHome: "← Back to home",
       comments: "Comments",
+      commentsSub: "What do you think? Leave a comment or tell me what you'd like to read.",
       workCv: "Professional work and CV →",
     },
   },
