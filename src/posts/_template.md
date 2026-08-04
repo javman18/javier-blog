@@ -4,7 +4,6 @@ title: "Título del post"
 date: 2026-01-01
 excerpt: "Resumen corto de 1-2 frases. Se usa en las tarjetas y como <meta description>."
 topics: ["accidente"]
-featured: false
 ---
 
 <!--
@@ -23,12 +22,13 @@ CÓMO USAR ESTA PLANTILLA (este archivo nunca se publica, permalink: false lo ex
    - excerpt    (obligatorio) — resumen corto para tarjetas y meta description.
    - topics     (opcional)    — 1-2 ids del set fijo en src/_data/taxonomy.js
                                  (accidente, audio, cuerpo, ia, desarrollo, vida-diaria).
-   - featured   (opcional)    — true para aparecer en Destacados (máximo 3, el más
-                                 reciente se muestra grande, automático, sin tocar la home).
 
    No hace falta declarar `category` ni `lang` — se toman de la carpeta donde guardes el archivo.
+   Tampoco hay campo `featured` aquí: para poner un post en Destacados, agrega su
+   <slug> a la lista en src/_data/featured.js (el primero de la lista sale grande).
 
-3. Escribe el contenido abajo en Markdown normal.
+3. Escribe el contenido abajo en Markdown normal. Cada salto de línea se respeta
+   como salto visual (<br>) — no hace falta dejar espacios al final de línea.
 
 4. Corre `npm run build` (o `npm run serve` para verlo en localhost mientras escribes)
    y haz commit + push. El deploy a GitHub Pages es automático (ver .github/workflows/deploy.yml).

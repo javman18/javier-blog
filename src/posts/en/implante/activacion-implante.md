@@ -3,7 +3,6 @@ title: "When my cochlear implant was activated"
 date: 2026-01-22
 excerpt: "Activation day: the office, the doctor’s question, and my brother recording."
 topics: ["audio"]
-featured: true
 ---
 
 The day my cochlear implant was activated, I went with my brother and my grandmother. I clearly remember the clinic.

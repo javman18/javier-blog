@@ -3,7 +3,6 @@ title: "Cuando activaron mi implante coclear"
 date: 2026-01-22
 excerpt: "El día de la activación: el consultorio, la pregunta de la doctora y mi hermano grabando."
 topics: ["audio"]
-featured: true
 ---
 
 El día que me activaron el implante coclear fui con mi hermano y mi abuela. Me acuerdo bien del consultorio.

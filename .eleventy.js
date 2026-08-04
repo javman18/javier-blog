@@ -1,6 +1,26 @@
 const taxonomy = require("./src/_data/taxonomy.js");
+const featured = require("./src/_data/featured.js");
+const markdownIt = require("markdown-it");
+
+function slugFromUrl(url) {
+  return url.split("/").filter(Boolean).pop().replace(/\.html$/, "");
+}
+
+// Sin tope fijo: se arma con lo que haya en src/_data/featured.js.
+function resolveFeatured(posts) {
+  return featured
+    .map((f) => {
+      const post = posts.find((p) => slugFromUrl(p.url) === f.slug);
+      return post ? { post, size: f.size === "big" ? "big" : "small" } : null;
+    })
+    .filter(Boolean);
+}
 
 module.exports = function (eleventyConfig) {
+  // breaks:true — cualquier salto de línea en el .md se vuelve <br>, sin
+  // depender de dos espacios invisibles al final de línea (fáciles de perder).
+  eleventyConfig.setLibrary("md", markdownIt({ html: true, breaks: true, linkify: true }));
+
   // Archivos estáticos: se copian tal cual, sin procesar.
   eleventyConfig.addPassthroughCopy("src/style.css");
   eleventyConfig.addPassthroughCopy("src/assets");
@@ -18,18 +38,10 @@ module.exports = function (eleventyConfig) {
     api.getFilteredByTag("postsEn").sort(byDateDesc)
   );
   eleventyConfig.addCollection("featuredEs", (api) =>
-    api
-      .getFilteredByTag("postsEs")
-      .filter((p) => p.data.featured)
-      .sort(byDateDesc)
-      .slice(0, 3)
+    resolveFeatured(api.getFilteredByTag("postsEs"))
   );
   eleventyConfig.addCollection("featuredEn", (api) =>
-    api
-      .getFilteredByTag("postsEn")
-      .filter((p) => p.data.featured)
-      .sort(byDateDesc)
-      .slice(0, 3)
+    resolveFeatured(api.getFilteredByTag("postsEn"))
   );
 
   // --- Filtros ---

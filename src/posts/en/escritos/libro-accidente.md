@@ -3,7 +3,6 @@ title: "The accident book: why I’m writing it"
 date: 2026-01-14
 excerpt: "A starting point: what happened in 2016, and how I’m making sense of it now."
 topics: ["accidente"]
-featured: true
 ---
 
 I’m writing a book about my 2016 accident because it was an event that split my life in two, and over time I realized I remembered it in fragments: isolated scenes, conversations, sensations, gaps. Writing it is a way of putting all that in order.

@@ -23,17 +23,36 @@ cada push a `main` (ver `.github/workflows/deploy.yml`).
    | `date`     | sí | `YYYY-MM-DD`. Define el orden en Recientes y Archivo. |
    | `excerpt`  | sí | Resumen corto para tarjetas y `<meta description>`. |
    | `topics`   | no | 1-2 ids del set fijo en `src/_data/taxonomy.js` (`accidente`, `audio`, `cuerpo`, `ia`, `desarrollo`, `vida-diaria`). |
-   | `featured` | no | `true` para aparecer en Destacados (máximo 3; el más reciente se muestra grande, automático). |
 
    No declares `category` ni `lang` en el frontmatter — se toman solos de la carpeta
-   donde guardas el archivo.
+   donde guardas el archivo. Tampoco hay campo `featured` — ver más abajo.
 
-3. Escribe el contenido en Markdown normal debajo del frontmatter.
+3. Escribe el contenido en Markdown normal debajo del frontmatter. Cada salto de
+   línea que escribas se respeta como salto visual — no hace falta dejar espacios
+   al final de la línea ni nada especial, solo Enter donde quieras el corte.
 
 4. Corre `npm run serve` para verlo en `http://localhost:8080` mientras escribes.
 
 5. Haz commit y push a `main`. El deploy a GitHub Pages es automático — no hay que
    correr ningún build a mano ni tocar HTML de otras páginas.
+
+### Destacados de la home
+
+Se controlan desde un solo archivo, `src/_data/featured.js`:
+
+```js
+module.exports = [
+  { slug: "sindrome-mesa-cena", size: "big" },
+  { slug: "activacion-implante", size: "small" },
+  { slug: "libro-accidente", size: "small" },
+];
+```
+
+Cada entrada es un `<slug>` (el nombre del archivo, sin `.md`, igual en ES y EN) con
+su propio `size`: `"big"` se pinta arriba y grande, `"small"` abajo en fila. No hay
+un tope fijo en el código — pon cuantas entradas de cada tipo quieras, el layout se
+arma solo. Para cambiar los destacados, edita este arreglo. No hay que tocar los
+posts ni ninguna plantilla, y no depende de la fecha del post.
 
 ### ¿Nueva categoría?
 

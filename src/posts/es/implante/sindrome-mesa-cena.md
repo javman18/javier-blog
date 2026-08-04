@@ -3,7 +3,6 @@ title: "El síndrome de la mesa de la cena"
 date: 2026-04-06
 excerpt: "Estar en una mesa con varias personas y no poder seguir la conversación: cómo se siente y por qué pasa."
 topics: ["audio", "vida-diaria"]
-featured: true
 ---
 
 Existe algo que se conoce como el “síndrome de la mesa de la cena”.

@@ -3,7 +3,6 @@ title: "El libro del accidente: por qué lo estoy escribiendo"
 date: 2026-01-14
 excerpt: "Un punto de partida: contar lo que pasó en 2016 y cómo lo estoy entendiendo ahora."
 topics: ["accidente"]
-featured: true
 ---
 
 Estoy escribiendo un libro sobre mi accidente de 2016 porque fue un evento que partió mi vida en dos, y con el tiempo me di cuenta de que lo recordaba por partes: escenas sueltas, conversaciones, sensaciones, huecos. Escribirlo es una forma de ordenar eso.

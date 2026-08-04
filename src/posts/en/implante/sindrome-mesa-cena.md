@@ -3,7 +3,6 @@ title: "The Dinner Table Syndrome"
 date: 2026-04-06
 excerpt: "Being at a table with multiple people and not being able to follow the conversation: what it feels like and why it happens."
 topics: ["audio", "vida-diaria"]
-featured: true
 ---
 
 The “dinner table syndrome” is a real thing. It’s a term people use, and I relate to it a lot.

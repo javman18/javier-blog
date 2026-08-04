@@ -7,12 +7,19 @@
       <p class="section-sub">{{ site.strings[lang].featuredSub }}</p>
     </div>
 
+    {% set bigs = [] %}
+    {% set smalls = [] %}
+    {% for f in featuredPosts %}
+      {% if f.size == "big" %}{% set _ = bigs.push(f.post) %}{% else %}{% set _ = smalls.push(f.post) %}{% endif %}
+    {% endfor %}
+    {% set featuredFlat = bigs.concat(smalls) %}
+
     <div class="featured-grid">
       <div class="featured-hero">
-        {% if featuredPosts.length %}{{ postcard.card(featuredPosts[0], lang, true) }}{% endif %}
+        {% for p in bigs %}{{ postcard.card(p, lang, true) }}{% endfor %}
       </div>
       <div class="featured-side">
-        {% for p in featuredPosts.slice(1, 3) %}{{ postcard.card(p, lang, false) }}{% endfor %}
+        {% for p in smalls %}{{ postcard.card(p, lang, false) }}{% endfor %}
       </div>
     </div>
   </section>
@@ -24,7 +31,7 @@
     </div>
 
     <div class="recent-list">
-      {% for p in (posts | excludeFrom(featuredPosts)).slice(0, 10) %}
+      {% for p in (posts | excludeFrom(featuredFlat)).slice(0, 10) %}
       <a class="recent-row" href="{{ p.url }}">
         <div class="recent-left">
           <div class="recent-title">{{ p.data.title }}</div>
