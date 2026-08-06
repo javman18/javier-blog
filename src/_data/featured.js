@@ -3,9 +3,10 @@
 // "big" se pinta arriba (grande); "small" abajo, en fila.
 // Usa el <slug> del archivo (el nombre sin .md), igual en ES y EN.
 module.exports = [
+  { slug: "del-n6-al-n8", size: "big" },
   { slug: "sindrome-mesa-cena", size: "big" },
   { slug: "activacion-implante", size: "small" },
   { slug: "libro-accidente", size: "small" },
   { slug: "nucleus-8", size: "big" },
-  { slug: "del-n6-al-n8", size: "big" },
+  
 ];
