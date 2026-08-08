@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="/style.css" />
   <link rel="alternate" type="application/atom+xml" title="Javier — Blog"
         href="{{ '/en/feed.xml' if lang == 'en' else '/feed.xml' }}" />
+
+  {% set esUrl = page.url if lang == 'es' else otherLangUrl %}
+  {% set enUrl = page.url if lang == 'en' else otherLangUrl %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <link rel="alternate" hreflang="es" href="{{ site.url }}{{ esUrl }}" />
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ enUrl }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ esUrl }}" />
 </head>
 
 <body>
