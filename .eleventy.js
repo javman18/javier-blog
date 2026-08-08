@@ -26,6 +26,8 @@ module.exports = function (eleventyConfig) {
 
   // Archivos estáticos: se copian tal cual, sin procesar.
   eleventyConfig.addPassthroughCopy("src/style.css");
+  eleventyConfig.addPassthroughCopy("src/favicon.svg");
+  eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/giscus.js");
   eleventyConfig.addPassthroughCopy({ CNAME: "CNAME" });
