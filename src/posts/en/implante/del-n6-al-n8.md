@@ -1,13 +1,13 @@
 ---
 title: "From the Nucleus 6 to the Nucleus 8"
 date: 2026-08-05
-excerpt: "Today I upgraded after nine years with the same implant. I didn't expect the change to be this radical."
+excerpt: "Today I upgraded after nine years with the same processor. I didn't expect the change to be this radical."
 topics: ["audio", "accidente"]
 ---
 
 Today I upgraded.
 
-Nine years with the same implant, the Nucleus 6, and today I finally switched it for a Nucleus 8.
+Nine years with the same processor, the Nucleus 6, and today I finally switched it for a Nucleus 8.
 
 I didn't know what to expect.
 

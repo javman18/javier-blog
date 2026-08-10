@@ -4,7 +4,7 @@ isPost: true
 ---
 <main class="post-main">
   <article class="post">
-    <header class="post-header">
+    <header class="post-header" data-reveal>
       <h1 class="post-title-h1">{{ title }}</h1>
       <div class="meta">
         <time>{{ date | formatDate(lang) }}</time> · {{ category | categoryLabel(lang) }}
@@ -20,7 +20,7 @@ isPost: true
       {{ content | safe }}
     </section>
 
-    <section class="comments">
+    <section class="comments" data-reveal>
       <h2>{{ site.strings[lang].comments }}</h2>
       <div class="comments-card">
         <div class="comments-host"></div>

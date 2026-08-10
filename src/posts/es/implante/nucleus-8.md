@@ -1,5 +1,5 @@
 ---
-title: "Nueve años, un implante nuevo"
+title: "Nueve años, un procesador nuevo"
 date: 2026-08-03
 excerpt: "Este miércoles cambio mi Nucleus 6 por un Nucleus 8, después de nueve años. Eso me hizo pensar en lo que perdí esa noche y en lo que gané después."
 topics: ["audio", "accidente"]
@@ -16,7 +16,7 @@ Simplemente estaba ahí.
 Después del accidente perdí la audición. 
 Y ahí empecé a entender lo que significa **escuchar de verdad**.
 
-Han pasado nueve años desde que me pusieron mi primer implante: un Nucleus 6.
+Han pasado nueve años desde que me pusieron mi primer procesador: un Nucleus 6.
 
 Nueve años escuchando el mundo a través de ese aparato.
 

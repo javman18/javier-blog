@@ -1,5 +1,5 @@
 {% macro card(post, lang, big=false) %}
-<article class="post-card {{ 'post-card--big' if big }}">
+<article class="post-card {{ 'post-card--big' if big }}" data-reveal>
   <div class="meta">
     <time>{{ post.data.date | formatDate(lang) }}</time> · {{ post.data.category | categoryLabel(lang) }}
   </div>

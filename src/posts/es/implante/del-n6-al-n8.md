@@ -1,13 +1,13 @@
 ---
 title: "Del Nucleus 6 al Nucleus 8"
 date: 2026-08-05
-excerpt: "Hoy me actualicé después de nueve años con el mismo implante. No esperaba que el cambio fuera tan radical."
+excerpt: "Hoy me actualicé después de nueve años con el mismo procesador. No esperaba que el cambio fuera tan radical."
 topics: ["audio", "accidente"]
 ---
 
 Hoy me actualicé.
 
-Nueve años con el mismo implante, el Nucleus 6, y hoy por fin lo cambié por un Nucleus 8.
+Nueve años con el mismo procesador, el Nucleus 6, y hoy por fin lo cambié por un Nucleus 8.
 
 No sabía qué esperar.
 

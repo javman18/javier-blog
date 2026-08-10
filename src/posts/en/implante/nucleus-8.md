@@ -1,5 +1,5 @@
 ---
-title: "Nine years, a new implant"
+title: "Nine years, a new processor"
 date: 2026-08-03
 excerpt: "This Wednesday I'm switching my Nucleus 6 for a Nucleus 8, after nine years. That got me thinking about what I lost that night, and what I gained afterward."
 topics: ["audio", "accidente"]
@@ -16,7 +16,7 @@ It was just there.
 After the accident I lost my hearing. 
 And that's when I started to understand **what it really means to hear**.
 
-It's been nine years since I got my first implant: a Nucleus 6.
+It's been nine years since I got my first processor: a Nucleus 6.
 
 Nine years hearing the world through that device.
 

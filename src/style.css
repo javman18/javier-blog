@@ -304,9 +304,13 @@ time{
   color: var(--muted);
   font-size: 1.1rem;
   line-height: 1;
+  display: inline-block;
+}
+@media (prefers-reduced-motion: no-preference){
+  .section-block-head::after{ transition: transform 0.25s ease; }
 }
 .section-block[open] .section-block-head::after{
-  content: "–";
+  transform: rotate(45deg);
 }
 
 .section-block-title{
@@ -499,6 +503,38 @@ time{
   text-decoration: underline;
   text-decoration-color: var(--accent);
   text-underline-offset: 4px;
+}
+
+/* Movimiento sutil al cargar/hacer scroll — respeta prefers-reduced-motion:
+   sin esta media query, .reveal no existe y todo se ve normal (sin JS tampoco
+   se oculta nada, ver el script en base.njk). */
+@media (prefers-reduced-motion: no-preference){
+  .reveal{
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+  .reveal.is-visible{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover: pequeño aumento de tamaño en tarjetas. Va después de .reveal para
+   ganarle el empate de especificidad una vez que la tarjeta ya está visible. */
+@media (prefers-reduced-motion: no-preference){
+  .post-card,
+  .section-block{
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  .post-card:hover{
+    transform: scale(1.015);
+    border-color: color-mix(in srgb, var(--border) 60%, var(--accent) 40%);
+  }
+  .section-block:hover{
+    transform: scale(1.01);
+    border-color: color-mix(in srgb, var(--border) 60%, var(--accent) 40%);
+  }
 }
 
 /* Focus visible */
