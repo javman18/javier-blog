@@ -8,5 +8,6 @@ module.exports = [
   { slug: "activacion-implante", size: "small" },
   { slug: "libro-accidente", size: "small" },
   { slug: "nucleus-8", size: "big" },
+  { slug: "el-lado-derecho", size: "small" },
   
 ];
