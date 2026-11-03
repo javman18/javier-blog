@@ -27,7 +27,7 @@ The character is built with separated arms, head, torso, and legs. This allows m
 
 I started adding recoil, muzzle flash, and small visual tweaks. It’s not the final version, but the weapon already feels better when shooting.
 
-![Weapon switching and shooting (WIP)](/assets/gifs/zombies-weapon-switch.gif)
+![Weapon switching and shooting (WIP)](/assets/gifs/zombies-weapon-switch-en.gif)
 
 *Weapon switching and shooting — WIP*
 

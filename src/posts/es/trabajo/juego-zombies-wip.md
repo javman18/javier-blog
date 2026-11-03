@@ -27,7 +27,7 @@ El personaje está construido separando brazos, cabeza, torso y piernas. Esto me
 
 Empecé a agregar recoil, muzzle flash y pequeños ajustes visuales. No es la versión final, pero el arma ya se siente mejor al disparar.
 
-![Cambio de arma y disparo (WIP)](/assets/gifs/zombies-weapon-switch.gif)
+![Cambio de arma y disparo (WIP)](/assets/gifs/zombies-weapon-switch-es.gif)
 
 *Cambio de arma y disparo — WIP*
 
